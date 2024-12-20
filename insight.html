@@ -57,8 +57,8 @@
                     <a href="index.html">Home</a>
                   </li>
                   <li><a href="about.html">About</a></li>
-                  <li class="active"><a href="attorneys.html">Attorneys</a></li>
-                  <li><a href="insight.html">Insights</a></li>
+                  <li><a href="attorneys.html">Attorneys</a></li>
+                  <li class="active"><a href="insight.html">Insights</a></li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </nav>
@@ -79,11 +79,11 @@
     <!-- .site-mobile-menu -->
 
     <div
+      id="background-cover"
       class="site-blocks-cover inner-page-cover overlay"
-      style="background-image: url('images/hero_1.jpg')"
+      style="background-image: url('images/blog1.jpg')"
       data-aos="fade"
       data-stellar-background-ratio="0.5"
-      data-aos="fade"
     >
       <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -92,58 +92,119 @@
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <h1 class="mb-4">Our Attorneys</h1>
+            <h1 class="mb-4">Insights</h1>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row justify-content-center mb-5"></div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a1.html')">
-                <img src="Attorneys/1.JPG" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Onyedikachi Dickson Okorie</h2>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a2.html')">
-                <img src="Attorneys/2.jpg" height="300px" width="300px" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Chika Henry Ezeh</h2>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a3.html')">
-                <img src="Attorneys/3.jpg" height="300px" width="300px" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Kelechi Cynthia Onyenkwo</h2>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a4.html')">
-                <img src="Attorneys/4.jpg" height="300px" width="300px" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Celestine Chinazondu Ezeokeke</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    
     <script>
-        function openNewPage(url) {
-            window.open(url, "_blank");
-        }
+      const images = [
+        "images/blog1.jpg",
+        "images/blog2.jpg",
+        "images/blog3.jpg",
+      ];
+
+      let currentIndex = 0;
+
+      function changeBackground() {
+        currentIndex = (currentIndex + 1) % images.length;
+        document.getElementById(
+          "background-cover"
+        ).style.backgroundImage = `url('${images[currentIndex]}')`;
+      }
+
+      setInterval(changeBackground, 5000); // Change image every 4 seconds
     </script>
+
+    <div class="container">
+     <br />
+        <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <article class="mb-4">
+            <h2>
+              Nigerian Law: Understanding the New Data Protection Regulation
+            </h2>
+            <p><strong>Published on:</strong> October 1, 2023</p>
+            <p>
+              The Nigerian Data Protection Regulation (NDPR) was established to
+              safeguard the personal data of individuals. This article explores
+              the key provisions of the NDPR, its implications for businesses,
+              and how it aligns with global data protection standards.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+
+          <article class="mb-4">
+            <h2>Canadian Law: Recent Changes to Immigration Policies</h2>
+            <p><strong>Published on:</strong> September 15, 2023</p>
+            <p>
+              Canada has recently updated its immigration policies to attract
+              skilled workers from around the world. This article discusses the
+              changes, the application process, and what potential immigrants
+              need to know.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+
+          <article class="mb-4">
+            <h2>
+              Innovations in Tech: The Rise of Artificial Intelligence in
+              Everyday Life
+            </h2>
+            <p><strong>Published on:</strong> October 10, 2023</p>
+            <p>
+              Artificial Intelligence (AI) is transforming various sectors, from
+              healthcare to finance. This article examines the latest
+              innovations in AI technology and how they are being integrated
+              into our daily lives.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+
+          <article class="mb-4">
+            <h2>
+              Nigerian Law: The Impact of the New Companies and Allied Matters
+              Act
+            </h2>
+            <p><strong>Published on:</strong> August 20, 2023</p>
+            <p>
+              The Companies and Allied Matters Act (CAMA) has undergone
+              significant reforms. This article provides an overview of the
+              changes and their impact on business operations in Nigeria.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+
+          <article class="mb-4">
+            <h2>
+              Canadian Law: Understanding the Charter of Rights and Freedoms
+            </h2>
+            <p><strong>Published on:</strong> September 5, 2023</p>
+            <p>
+              The Canadian Charter of Rights and Freedoms is a cornerstone of
+              Canadian law. This article delves into its significance, key
+              rights it protects, and recent court cases that have shaped its
+              interpretation.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+
+          <article class="mb-4">
+            <h2>
+              Innovations in Tech: Blockchain Technology and Its Applications
+            </h2>
+            <p><strong>Published on:</strong> October 5, 2023</p>
+            <p>
+              Blockchain technology is revolutionizing industries by providing
+              secure and transparent transaction methods. This article explores
+              its applications beyond cryptocurrency, including supply chain
+              management and healthcare.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+        </div>
+      </div>
     </div>
 
     <footer class="site-footer" style="margin-bottom: 0">

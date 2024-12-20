@@ -80,7 +80,7 @@
 
     <div
       class="site-blocks-cover inner-page-cover overlay"
-      style="background-image: url('images/hero_1.jpg')"
+      style="background-image: url('images/hero_3.jpg')"
       data-aos="fade"
       data-stellar-background-ratio="0.5"
       data-aos="fade"
@@ -92,58 +92,146 @@
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <h1 class="mb-4">Our Attorneys</h1>
+            <h1 class="mb-4">Attorney</h1>
           </div>
         </div>
       </div>
     </div>
 
+    <br />
     <div class="container">
-      <div class="row justify-content-center mb-5"></div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <img
+                src="attorneys/4.jpg"
+                alt="Profile Picture"
+                class="img-fluid rounded-circle mb-3"
+                style="width: 150px; height: 150px"
+              />
+              <h2 class="card-title">Celestine Chinazondu Ezeokeke</h2>
+              <p class="card-text">
+                Email: <a style="color: black" href="mailto:nomail">nomail</a>
+              </p>
+              <p class="card-text">
+                Phone:
+                <a style="color: black" href="tel:1234">1234</a>
+              </p>
+              <hr />
+              <p class="card-text">
+                Celestine Chinazondu Ezeokeke obtained his LL.B from Nnamdi
+                Azikiwe University, Awka in 2017. He was admitted to the
+                Nigerian Bar in the year 2018 after his one year Law School
+                Program at the Nigerian Law School, Abuja Campus.
+              </p>
+              <p>
+                He is an Associate of the Chartered Institute of Arbitrators UK
+                and a Member of the Business Recovery and Insolvency
+                Practitioners Association of Nigeria.
+              </p>
+              <p>
+                He has advanced experience in the general practice of law,
+                including the areas of Dispute Resolution, Litigation, Corporate
+                and Property practice. He is an efficient team player and a
+                leader with work ethics that inspires, motivates and develops
+                team performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a1.html')">
-                <img src="Attorneys/1.JPG" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Onyedikachi Dickson Okorie</h2>
-                </div>
-            </div>
+      <div class="profile-section">
+        <div class="toggle-buttons">
+          <button id="articlesBtn" class="active">Articles</button>
+          <button id="dealsBtn">Deals</button>
         </div>
-    
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a2.html')">
-                <img src="Attorneys/2.jpg" height="300px" width="300px" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Chika Henry Ezeh</h2>
-                </div>
-            </div>
+        <div id="articles" class="content active">
+          <h3>Articles</h3>
+          <p>None posted yet!</p>
         </div>
-    
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a3.html')">
-                <img src="Attorneys/3.jpg" height="300px" width="300px" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Kelechi Cynthia Onyenkwo</h2>
-                </div>
-            </div>
+        <div id="deals" class="content">
+          <h3>Deals</h3>
+          <p>None posted yet!</p>
         </div>
-    
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a4.html')">
-                <img src="Attorneys/4.jpg" height="300px" width="300px" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Celestine Chinazondu Ezeokeke</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        function openNewPage(url) {
-            window.open(url, "_blank");
+      </div>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
         }
-    </script>
+
+        .profile-section {
+          width: 90%; /* Use a percentage for better responsiveness */
+          max-width: 750px; /* Maintain a maximum width */
+          margin: 20px auto;
+          border: 1px solid #ccc;
+          padding: 20px;
+          border-radius: 5px;
+        }
+
+        .toggle-buttons {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+
+        button {
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          flex: 1; /* Allow buttons to grow equally */
+          margin: 0 5px; /* Add some space between buttons */
+        }
+
+        button.active {
+          background-color: #6c7075;
+          color: white;
+        }
+
+        .content {
+          display: none;
+        }
+
+        .content.active {
+          display: block;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 600px) {
+          .toggle-buttons {
+            flex-direction: column; /* Stack buttons vertically */
+          }
+
+          button {
+            margin: 5px 0; /* Add vertical margin for stacked buttons */
+          }
+
+          .profile-section {
+            padding: 15px; /* Reduce padding on smaller screens */
+          }
+        }
+      </style>
+      <script>
+        document
+          .getElementById("articlesBtn")
+          .addEventListener("click", function () {
+            document.getElementById("articles").classList.add("active");
+            document.getElementById("deals").classList.remove("active");
+            this.classList.add("active");
+            document.getElementById("dealsBtn").classList.remove("active");
+          });
+
+        document
+          .getElementById("dealsBtn")
+          .addEventListener("click", function () {
+            document.getElementById("deals").classList.add("active");
+            document.getElementById("articles").classList.remove("active");
+            this.classList.add("active");
+            document.getElementById("articlesBtn").classList.remove("active");
+          });
+      </script>
     </div>
 
     <footer class="site-footer" style="margin-bottom: 0">

@@ -80,7 +80,7 @@
 
     <div
       class="site-blocks-cover inner-page-cover overlay"
-      style="background-image: url('images/hero_1.jpg')"
+      style="background-image: url('images/hero_3.jpg')"
       data-aos="fade"
       data-stellar-background-ratio="0.5"
       data-aos="fade"
@@ -92,58 +92,172 @@
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <h1 class="mb-4">Our Attorneys</h1>
+            <h1 class="mb-4">Attorney</h1>
           </div>
         </div>
       </div>
     </div>
 
+    <br />
     <div class="container">
-      <div class="row justify-content-center mb-5"></div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <img
+                src="attorneys/1.JPG"
+                alt="Profile Picture"
+                class="img-fluid rounded-circle mb-3"
+                style="width: 150px; height: 150px"
+              />
+              <h2 class="card-title">Onyedikachi Dickson Okorie</h2>
+              <h5 class="card-subtitle mb-2 text-muted">
+                Co-founder / Partner
+              </h5>
+              <p class="card-text">
+                Email: <a style="color: black" href="mailto:nomail">nomail</a>
+              </p>
+              <p class="card-text">
+                Phone: <a style="color: black" href="tel:+1(647)540 6693">+1(647)540 6693</a>
+              </p>
+              <hr />
+              <p class="card-text">
+                Onyedikachi Dickson Okorie is the Managing Partner at Dickson
+                and Henry Attorneys LP, a leading law firm specializing in
+                aviation law and corporate law. With nearly a decade of
+                professional experience, Dickson has established himself as a
+                highly skilled and trusted legal advisor, delivering strategic
+                solutions to complex corporate and commercial challenges.
+              </p>
+              <p>
+                A graduate of the prestigious University of Manchester, England,
+                where he earned a Bachelor of Laws (LLB) degree, Dickson further
+                honed his expertise at Durham University, obtaining a Master of
+                Laws (LLM) in International Trade and Economic Law. His advanced
+                education, combined with his extensive practical experience, has
+                made him a sought-after authority in the fields of aviation law,
+                corporate governance, mergers and acquisitions, regulatory
+                compliance, and cross-border commercial transactions.
+              </p>
+              <p>
+                Throughout his career, Dickson has earned a reputation for his
+                meticulous attention to detail, analytical acumen, and ability
+                to navigate complex legal landscapes. He has consistently
+                provided innovative legal counsel to both local and
+                international clients, guiding them through the intricacies of
+                corporate law while ensuring the highest standards of governance
+                and legal compliance. His leadership at Dickson and Henry
+                Attorneys LP has contributed significantly to the firm's growth,
+                positioning it as a key player in the legal industry.
+              </p>
+              <p>
+                Dickson’s commitment to excellence and his proactive approach to
+                legal practice have earned him the respect of clients,
+                colleagues, and industry peers alike. He remains dedicated to
+                advancing corporate law practices and fostering ethical
+                governance standards in today’s rapidly evolving business
+                environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a1.html')">
-                <img src="Attorneys/1.JPG" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Onyedikachi Dickson Okorie</h2>
-                </div>
-            </div>
+      <div class="profile-section">
+       
+        <div class="toggle-buttons">
+          <button id="articlesBtn" class="active">Articles</button>
+          <button id="dealsBtn">Deals</button>
         </div>
-    
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a2.html')">
-                <img src="Attorneys/2.jpg" height="300px" width="300px" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Chika Henry Ezeh</h2>
-                </div>
-            </div>
+        <div id="articles" class="content active">
+          <h3>Articles</h3>
+          <p>
+            None posted yet!
+          </p>
         </div>
-    
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a3.html')">
-                <img src="Attorneys/3.jpg" height="300px" width="300px" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Kelechi Cynthia Onyenkwo</h2>
-                </div>
-            </div>
+        <div id="deals" class="content">
+          <h3>Deals</h3>
+          <p>
+            None posted yet!
+          </p>
         </div>
-    
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1" onclick="openNewPage('a4.html')">
-                <img src="Attorneys/4.jpg" height="300px" width="300px" alt="Image" class="img-fluid" />
-                <div class="person-1-contents" style="background-color: black">
-                    <h2>Celestine Chinazondu Ezeokeke</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        function openNewPage(url) {
-            window.open(url, "_blank");
+      </div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+      }
+      
+      .profile-section {
+        width: 90%; /* Use a percentage for better responsiveness */
+        max-width: 750px; /* Maintain a maximum width */
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      
+      .toggle-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        flex: 1; /* Allow buttons to grow equally */
+        margin: 0 5px; /* Add some space between buttons */
+      }
+      
+      button.active {
+        background-color: #6c7075;
+        color: white;
+      }
+      
+      .content {
+        display: none;
+      }
+      
+      .content.active {
+        display: block;
+      }
+      
+      /* Media Queries for Mobile Responsiveness */
+      @media (max-width: 600px) {
+        .toggle-buttons {
+          flex-direction: column; /* Stack buttons vertically */
         }
-    </script>
+      
+        button {
+          margin: 5px 0; /* Add vertical margin for stacked buttons */
+        }
+      
+        .profile-section {
+          padding: 15px; /* Reduce padding on smaller screens */
+        }
+      }
+</style>
+      <script>
+        document
+          .getElementById("articlesBtn")
+          .addEventListener("click", function () {
+            document.getElementById("articles").classList.add("active");
+            document.getElementById("deals").classList.remove("active");
+            this.classList.add("active");
+            document.getElementById("dealsBtn").classList.remove("active");
+          });
+
+        document
+          .getElementById("dealsBtn")
+          .addEventListener("click", function () {
+            document.getElementById("deals").classList.add("active");
+            document.getElementById("articles").classList.remove("active");
+            this.classList.add("active");
+            document.getElementById("articlesBtn").classList.remove("active");
+          });
+      </script>
     </div>
 
     <footer class="site-footer" style="margin-bottom: 0">
